@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Flocking UI Midi Clock View Demo</title>
+
+        <script src="../node_modules/flocking/dist/flocking-all.js"></script>
+        <script src="../node_modules/flocking/src/ui/selectbox/js/selectbox.js"></script>
+        <script src="../node_modules/flocking/src/ui/midi/midi-connector/js/midi-connector.js"></script>
+        <script src="../node_modules/flocking/src/ui/midi/midi-port-selector/js/midi-port-selector.js"></script>
+
+        <script src="../src/js/midi-clock-receiver.js"></script>
+        <script src="../src/js/midi-clock-view.js"></script>
+        <script src="midi-clock-view-demo.js"></script>
+    </head>
+    <body>
+        <div id="flock-midi-clock-view-demo">
+            <div class="flock-midiConnector"></div>
+            <div class="flock-clockView"></div>
+        </div>
+
+        <script>
+            window.midiClockViewDemo = flock.ui.midiClockView.demo("#flock-midi-clock-view-demo");
+        </script>
+    </body>
+</html>
